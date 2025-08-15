@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
@@ -81,7 +81,7 @@ internal partial class OptionsViewModel(IKeyValueStore keyValueStore, StorageSer
 
         LaunchGameViewModel.LastFindSubnauticaTask = Task.Run(() =>
         {
-            PirateDetection.TriggerOnDirectory(path);
+            //PirateDetection.TriggerOnDirectory(path);
 
             if (!FileSystem.Instance.IsWritable(Directory.GetCurrentDirectory()) || !FileSystem.Instance.IsWritable(path))
             {
